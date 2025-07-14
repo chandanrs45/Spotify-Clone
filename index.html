@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Web Player: Music Player for everyone</title>
+    <link rel="icon" href="./assets/logo.png">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                        <div class="icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                </div>
+                    <div class="lib-box">
+                        <div class="box">
+                            <p class="box-p1">Create your first playlist</p>
+                            <p class="box-p2">It's easy, we'll help you</p>
+                            <button class="badge">Create playlist</button>
+                        </div>
+                        <div class="box">
+                            <p class="box-p1">Lets find some podcasts to follow</p>
+                            <p class="box-p2">We'll keep you updated on new episodes</p>
+                            <button class="badge">Browse podcasts</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-icon">
+                    <img src="./assets/backward_icon.png" />
+                    <img src="./assets/forward_icon.png" class="hide" alt=""/>
+                </div>
+                <div class="sticky-options">
+                    <button class="badge nav-opt hide">Explore Premium</button>
+                    <button class="badge nav-opt dark-badge"><i class="fa-sharp fa-regular fa-circle-down" style="margin-right: 8px;"></i>Install App</button>
+                    <i class="fa-regular nav-opt fa-user"></i>
+                </div>
+            </div>
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks</p>
+                </div>
+            </div>    
+            <h2>Trending now near you</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks</p>
+                </div>
+            </div>   
+            <h2>Featured charts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks</p>
+                </div>
+            </div> 
+            <div class="footer">
+                <div class="line">
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div class="album-image">
+                    <img src="assets/album.jpeg" alt="">
+                </div>
+                <div class="album-title">
+                    <p>Love The Way You Lie</p>
+                    <div class="artist-detail">
+                        <span class="artist">Eminem</span><span>, </span><span class="artist">Rihanna</span>
+                    </div>
+                    
+                </div>
+                <div class="album-icon">
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-control">
+                    <img src="./assets/player_icon1.png" alt="" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" alt="" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" alt="" class="player-control-icon" style="opacity: 1;height:2rem">
+                    <img src="./assets/player_icon4.png" alt="" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" alt="" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="tot-time">3.22</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="control-icon">
+                    <img src="./assets/controls_icon1.png" alt="">
+                    <img src="./assets/controld_icon2.png" alt="">
+                    <img src="./assets/controls_icon3.png" alt="" class="control-opt">
+                    <img src="./assets/controls_icon4.png" alt="" class="control-opt" style="margin-top: 8px;">
+                    <img src="./assets/controls_icon5.png" alt="">
+                </div>
+                <div class="volume-bar">
+                    <input type="range" min="0" max="100">
+                </div>
+                <div class="max">
+                    <i class="fa-solid fa-up-right-and-down-left-from-center" class="max"></i>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>
+
